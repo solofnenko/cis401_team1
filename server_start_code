@@ -1,0 +1,16 @@
+public void runServer(){
+    try{
+        server= new ServerSocket(1000,1000);
+        while(true){
+            try{
+                
+            }catch(EOFException eofException){
+                print("Connection ended.\n")
+            }finally{
+                shutDown();
+            }
+        }
+    }catch(IOException ioException){
+        ioException.printStackTrace();
+    }
+}
